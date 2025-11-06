@@ -5,8 +5,7 @@
 This section documents all details required to reproduce the experiments.
 
 ### 🔧 Environment
-- **Runtime:** Kaggle GPU (T4 / A100)
-- **OS / Python:** Ubuntu 22.04, Python 3.11
+- **Runtime:** Kaggle GPU (T4 * 2)
 - **Core Libraries:**
   - `torch`
   - `transformers`
