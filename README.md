@@ -24,7 +24,7 @@ This section documents all details required to reproduce the experiments.
 | `optimizer` | AdamW (lr = 1.2e-5) |
 | `scheduler` | Cosine with 6% warmup |
 | `label_smoothing` | 0.08 |
-| `weight_decay` | 0.05 |
+| `weight_decay` | 0.03 |
 | `dropout` | 0.2 (hidden/classifier) |
 | `early_stopping` | patience = 2 |
 
