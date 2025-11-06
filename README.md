@@ -38,7 +38,7 @@ To ensure full reproducibility:
 
 
 
-### ✅ Step 1. Import Models and Datasets
+### Step 1. Import Models and Datasets
 
 Before running the notebook, add all required models and datasets to your Kaggle environment.
 
