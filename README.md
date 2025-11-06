@@ -15,7 +15,7 @@ This section documents all details required to reproduce the experiments.
   - `pandas`, `numpy`, `matplotlib`, `tqdm`
 - **Mixed Precision:** `torch.amp.autocast("cuda")` (automatic mixed precision enabled)
 
-### ⚙️ Training Configuration
+### ⚙️ Final Model Training Configuration
 | Setting | Value |
 |----------|--------|
 | `random_state` | 42 |
