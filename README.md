@@ -2,6 +2,24 @@
 
 ## 🧩 Reproducibility Notes
 
+
+
+
+### ✅ Step 1. Import Models and Datasets
+
+Before running the notebook, add all required models and datasets to your Kaggle environment.
+
+#### 📦 How to Add
+1. Go to the right sidebar in your Kaggle Notebook → **"Add data"**
+2. Add the following inputs (either as **Models** or **Datasets**):
+   - `microsoft/deberta-v3-small` → (as model, or upload as dataset: `/kaggle/input/deberta-v3-small-local/`)
+   - `llm-classification-finetuning` → (dataset with `train.csv`, `test.csv`, `sample_submission.csv`)
+
+> 💡 You can find these either under **“Models”** tab in Kaggle, or upload them manually as datasets.  
+> Make sure **Internet is OFF**, since all weights and data are local.
+>
+> 
+
 This section documents all details required to reproduce the experiments.
 
 ### 🔧 Environment
