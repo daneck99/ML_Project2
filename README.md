@@ -2,10 +2,9 @@
 
 ## 🧩 Reproducibility Notes
 All experiments were conducted in a **Kaggle Notebook** environment using the following configuration:
-
-- **Runtime**: Python 3.11, PyTorch 2.3, Transformers 4.46, PEFT 0.12  
-- **Hardware**: Single NVIDIA T4 GPU (16GB VRAM)  
-- **Execution time**: ~45 minutes for full fine-tuning (Step 3)
+ 
+- **Hardware**: Single NVIDIA T4 GPU * 2 (16*2GB VRAM)  
+- **Execution time**: ~90 minutes for full fine-tuning (Step 3)
 
 To ensure full reproducibility:
 
@@ -26,9 +25,9 @@ To ensure full reproducibility:
 3. **Deterministic Workflow**  
    - Cell 1: Define paths, environment variables, and shared arguments (`BASE_ARGS`)  
    - Cell 2–3: Load and preprocess CSVs (train/test/submit)  
-   - Cell 4: Feature or embedding extraction  
-   - Cell 5: Model training (Step 1–3)  
-   - Cell 6: Inference and submission file generation (`submission.csv`)
+   - Cell 4: Step1
+   - Cell 5: Step2
+   - Cell 6~: Step3~4
 
 4. **Version Control & Dependencies**  
    - All package versions are pinned to prevent dependency drift.  
@@ -37,8 +36,7 @@ To ensure full reproducibility:
 **Note:** No internet connection or external API access is required to reproduce the results.
 
 
-
-### Step 1. Import Models and Datasets
+### Import Models and Datasets
 
 Before running the notebook, add all required models and datasets to your Kaggle environment.
 
@@ -77,6 +75,3 @@ This section documents all details required to reproduce the experiments.
 | `weight_decay` | 0.03 |
 | `dropout` | 0.2 (hidden/classifier) |
 | `early_stopping` | patience = 2 |
-
-### 🔒 Handling No-Internet Constraint
-All external model weights were **pre-uploaded to `/kaggle/input/`** directories:
